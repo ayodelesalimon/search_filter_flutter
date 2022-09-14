@@ -3,7 +3,7 @@ import 'dart:convert';
 class ProductModel {
   int? id;
   String? title;
-  double? price;
+  dynamic price;
   String? description;
   String? category;
   String? image;
@@ -11,7 +11,7 @@ class ProductModel {
 
   ProductModel(
       {this.id,
-        this.title,
+        this.title = "",
         this.price,
         this.description,
         this.category,
@@ -45,8 +45,8 @@ class ProductModel {
 }
 
 class Rating {
-  double? rate;
-  int? count;
+  dynamic rate;
+  dynamic count;
 
   Rating({this.rate, this.count});
 

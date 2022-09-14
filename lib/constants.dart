@@ -3,7 +3,8 @@ class APIConstants{
   static String postUrl = "posts";
   // static String userUrl = "users";
 
-  // static String productUrl = "https://fakestoreapi.com/products";
+  static String productUrl = "https://fakestoreapi.com/products";
+    static String productDetaisUrl = "https://fakestoreapi.com/products/";
 
 
 }
