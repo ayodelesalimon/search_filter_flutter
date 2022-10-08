@@ -1,4 +1,3 @@
-
 import 'package:api_database/details.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
@@ -108,6 +107,12 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Column(
                           //AppBar with a color gradient style....
                           children: [
+                            TextFormField(
+                              controller: searchTEC,
+                              onChanged: (String? value) {
+                                searchProducts(value!);
+                              },
+                            ),
                             Column(
                               children: [
                                 SizedBox(

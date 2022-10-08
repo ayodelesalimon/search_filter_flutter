@@ -14,6 +14,7 @@ class DetailScreen extends StatefulWidget {
 class _DetailScreenState extends State<DetailScreen> {
   ProductModel productModel = ProductModel();
   bool isLoading = false;
+  
 
   getDetail() async {
     setState(() {
@@ -45,7 +46,7 @@ class _DetailScreenState extends State<DetailScreen> {
         title: Text(productModel.title.toString() ),
       ),
 
-      body: isLoading ? Center(
+      body: isLoading ? const Center(
         child: CircularProgressIndicator(),
       ) : Center(
         child: Text(productModel.description!),
